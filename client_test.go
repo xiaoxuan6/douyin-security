@@ -6,7 +6,7 @@ import (
 )
 
 func TestClient(t *testing.T) {
-	account := NewAccount("xxx", "xxx", true)
+	account := NewAccount("xxx", "xxx", false)
 	client := NewClient(account)
 
 	token, err := client.GetAccessToken()

@@ -12,8 +12,8 @@ go get github.com/xiaoxuan6/douyin-security
 
 ```go
 // 创建账号
-account := NewAccount("xxx", "xxx", true) // app_id, app_secret, 是否为沙箱环境
-client := NewClient(account)
+account := douyin_security.NewAccount("xxx", "xxx", true) // app_id, app_secret, 是否为沙箱环境
+client := douyin_security.NewClient(account)
 
 // 获取access_token，有效期为2小时，自行缓存，如何不设置每次请求都会获取
 accessToken, err := client.GetAccessToken()

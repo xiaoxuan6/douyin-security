@@ -26,10 +26,10 @@ func (c *Client) SetMaxAttempts(maxAttempts uint) {
 
 func (c *Client) fetchUir() string {
 	if c.account.IsSandbox {
-		return baseUir
+		return sandboxUri
 	}
 
-	return sandboxUri
+	return baseUir
 }
 
 func (c *Client) TextVerify(text string) *Response {
